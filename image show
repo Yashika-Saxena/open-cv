@@ -1,0 +1,19 @@
+import cv2
+For color image
+img1 = cv2.imread(r'C:\Users\saxen\Downloads\photo.jpg',1)
+img1 =cv2.resize(img,(653,456)) #bgr
+print("the output img1")
+cv2.imshow("original",img1)  
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+--------------------------------------------------------------
+for Grey Image
+img2 = cv2.imread(r'C:\Users\saxen\Downloads\photo.jpg',-1)
+img2 =cv2.resize(img2,(653,456)) #bgr
+cv2.imshow("Grey",img2)  
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+--------------------------------------
+img1=cv2.flip(img1, 0) #it accept 3 parameter 0,1 ,-1
